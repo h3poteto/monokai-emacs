@@ -155,7 +155,7 @@ Also affects 'linum-mode' background."
   :type 'string
   :group 'monokai)
 
-(defcustom monokai-comments "#75715E"
+(defcustom monokai-comments "#AF5F00"
   "Adaptive colors - comments"
   :type 'string
   :group 'monokai)
@@ -550,22 +550,6 @@ Also affects 'linum-mode' background."
       (,monokai-256-class (:foreground ,monokai-256-green
                                         :weight bold))))
 
-   `(mode-line
-     ((,monokai-class (:inverse-video unspecified
-                                      :underline unspecified
-                                      :foreground ,monokai-emphasis
-                                      :background ,monokai-highlight
-                                      :box (:line-width 1
-                                                        :color ,monokai-gray
-                                                        :style unspecified)))
-      (,monokai-256-class (:inverse-video unspecified
-                                           :underline unspecified
-                                           :foreground ,monokai-256-foreground
-                                           :background ,monokai-256-background
-                                           :box (:line-width 1
-                                                             :color ,monokai-256-highlight
-                                                             :style unspecified)))))
-
    `(powerline-active1
      ((,monokai-class (:background ,monokai-gray-d))
       (,monokai-256-class (:background ,monokai-256-gray-d))))
@@ -575,22 +559,6 @@ Also affects 'linum-mode' background."
       (,monokai-256-class (:background ,monokai-256-background))))
 
 
-   `(mode-line-inactive
-     ((,monokai-class (:inverse-video unspecified
-                                      :underline unspecified
-                                      :foreground ,monokai-comments
-                                      :background ,monokai-background
-                                      :box (:line-width 1
-                                                        :color ,monokai-gray
-                                                        :style unspecified)))
-      (,monokai-256-class (:inverse-video unspecified
-                                           :underline unspecified
-                                           :foreground ,monokai-256-comments
-                                           :background ,monokai-256-background
-                                           :box (:line-width 1
-                                                             :color ,monokai-256-gray
-                                                             :style unspecified)))))
-
    `(powerline-inactive1
      ((,monokai-class (:background ,monokai-gray-d))
       (,monokai-256-class (:background ,monokai-256-gray-d))))
@@ -598,19 +566,6 @@ Also affects 'linum-mode' background."
    `(powerline-inactive2
      ((,monokai-class (:background ,monokai-background))
       (,monokai-256-class (:background ,monokai-256-background))))
-
-   ;; header-line
-   `(header-line
-     ((,monokai-class (:foreground ,monokai-emphasis
-                                   :background ,monokai-highlight
-                                   :box (:color ,monokai-gray
-                                                :line-width 1
-                                                :style unspecified)))
-      (,monokai-256-class (:foreground ,monokai-256-emphasis
-                                        :background ,monokai-256-highlight
-                                        :box (:color ,monokai-256-gray
-                                                     :line-width 1
-                                                     :style unspecified)))))
 
    ;; cua
    `(cua-global-mark
