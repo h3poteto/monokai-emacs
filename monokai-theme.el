@@ -155,7 +155,7 @@ Also affects 'linum-mode' background."
   :type 'string
   :group 'monokai)
 
-(defcustom monokai-comments "#75715E"
+(defcustom monokai-comments "#AF5F00"
   "Adaptive colors - comments"
   :type 'string
   :group 'monokai)
