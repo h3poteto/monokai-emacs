@@ -170,7 +170,7 @@ Also affects 'linum-mode' background."
   :type 'string
   :group 'monokai)
 
-(defcustom monokai-highlight "#49483E"
+(defcustom monokai-highlight "#434da2"
   "Adaptive colors - highlight"
   :type 'string
   :group 'monokai)
